@@ -20,4 +20,7 @@ def	sha1_decode(doc):
 		value = hash.hexdigest()
 		if (passwd == value): 
 			print('Password is: {0}'.format(word), end="")
+			sys.exit()
+	print('Password not found in given list')
+	
 sha1_decode(doc)
